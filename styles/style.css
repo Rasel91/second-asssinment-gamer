@@ -312,3 +312,35 @@ nav {
       height: 60px;
       border-radius: 50px;
 }
+
+/* footer css start */
+
+.footer_container {
+      text-align: center;
+      background-color: #0B0223;
+      color: beige;
+      padding: 120px 0;
+}
+
+.footer_logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+}
+
+
+.footer_btn>small {
+      margin: 25px 0;
+      padding: 25px;
+}
+
+.footer_brand {
+      margin-top: 2rem;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+}
+
+.footer_copyriht {
+      padding: 3rem;
+}
