@@ -7,6 +7,22 @@
 }
 
 /* shared css */
+.grident_text {
+      background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 3rem;
+      font-weight: 700;
+}
+
+.text_for_p {
+      color: #534C64;
+      font-size: 1rem;
+      padding: 10px 0;
+      line-height: 30px;
+
+}
 
 .btn_primary {
       color: #FFF;
@@ -16,6 +32,7 @@
       display: inline-flex;
       padding: 21px 40px;
       align-items: flex-start;
+      margin: 10px 0;
       gap: 10px;
       border: none;
       border-radius: 48px;
@@ -79,9 +96,9 @@ nav {
 }
 
 .nav-text {
+      font-size: 1.5rem;
       display: flex;
       width: 50%;
-      font-size: 18px;
       font-weight: 500;
       color: #3C354F;
       justify-content: space-around;
@@ -89,16 +106,19 @@ nav {
 }
 
 .nav_text_icon {
+      font-size: 1.5rem;
       padding: 17px 16px;
       border-radius: 8px;
       background: rgba(11, 2, 35, 0.10);
 }
 
 .fa-brands {
-      width: 33.916px;
-      height: 24px;
+      font-size: 30px;
 
-      fill: #F61C0D;
+}
+
+.youtube {
+      color: red;
 }
 
 .banner {
@@ -163,5 +183,54 @@ nav {
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+}
+
+/* We_are_gamer css start */
+
+
+
+.We_are_gamer {
+      width: 1440px;
+      margin: 50px auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* border: 1px solid #b00d5e; */
+}
+
+
+
+.gamer_img {
+      /* border: 1px solid #FF42A5; */
+      width: 50%;
+
+
+}
+
+.gamer_img>img {
+      /* border: 1px solid #12040b; */
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+
+}
+
+.gamer_text {
+      width: 50%;
+      padding: 10px;
+      text-align: right;
+}
+
+/* game_funny_video css start */
+
+.game_funny_video {
+
+      width: 1440px;
+      margin: 20px auto 0;
+      display: grid;
+      grid-area: 10px;
+      grid-template-columns: repeat(4, 1fr);
 
 }
