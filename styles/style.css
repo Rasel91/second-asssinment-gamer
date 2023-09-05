@@ -199,7 +199,13 @@ nav {
       /* border: 1px solid #b00d5e; */
 }
 
+.game-header {
+      text-align: center;
+}
 
+.game-header>h1 {
+      font-size: 3rem;
+}
 
 .gamer_img {
       /* border: 1px solid #FF42A5; */
@@ -229,10 +235,16 @@ nav {
 
       width: 1440px;
       margin: 20px auto 0;
-      display: grid;
-      grid-area: 10px;
-      grid-template-columns: repeat(4, 1fr);
+      display: flex;
+      gap: 10px;
+      /* display: grid; */
+      /* grid-area: 10px; */
+      /* grid-template-columns: repeat(4, 1fr); */
 
+}
+
+.game_funny_imgtex>img {
+      width: 100%;
 }
 
 /* play_instantly css start */
@@ -288,10 +300,15 @@ nav {
 }
 
 /* more_game_play css start */
+.game-hader {
+      text-align: center;
+      margin: 25px;
+      font-size: 2rem;
+}
 
 .more_game_container {
       padding: 10rem;
-      width: 1440px;
+      width: 70%;
       margin: 0 auto;
       display: flex;
       justify-content: space-evenly;
@@ -320,6 +337,7 @@ nav {
       background-color: #0B0223;
       color: beige;
       padding: 120px 0;
+      width: 100%;
 }
 
 .footer_logo {
@@ -343,4 +361,49 @@ nav {
 
 .footer_copyriht {
       padding: 3rem;
+}
+
+@media screen and (max-width: 576px) {
+
+      nav,
+      .nav-text {
+
+            flex-direction: column;
+      }
+
+      .banner {
+
+            flex-direction: column-reverse;
+      }
+
+      .We_are_gamer {
+
+            flex-direction: column;
+      }
+
+      .gamer_text {
+
+            text-align: center;
+      }
+
+      .game_funny_video {
+
+            flex-direction: column;
+      }
+
+      .play_instantly {
+
+            flex-direction: column;
+      }
+
+      .more_game_container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+      }
+
+      body {
+
+            background-color: olive;
+      }
 }
