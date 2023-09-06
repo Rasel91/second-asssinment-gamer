@@ -257,7 +257,7 @@ nav {
       max-width: 1440px;
       margin: 20px auto 0;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
 
 }
@@ -279,7 +279,7 @@ nav {
 }
 
 .play_instantly_img {
-      /* margin-top: 2rem; */
+      margin-top: 2rem;
       width: 50%;
       position: relative;
       left: 50px;
@@ -370,17 +370,34 @@ nav {
       padding: 3rem;
 }
 
+
+
+
+/* Responsive css start */
+
+
 @media screen and (max-width: 576px) {
 
       nav,
       .nav-text {
-
+            width: 100%;
             flex-direction: column;
+      }
+
+      .nav_text_icon {
+
+            padding: 10px 5px;
+
       }
 
       .banner {
 
             flex-direction: column-reverse;
+      }
+
+      .banner_text>div>h1 {
+            font-size: 2.5rem;
+
       }
 
       .We_are_gamer {
@@ -403,6 +420,29 @@ nav {
             flex-direction: column;
       }
 
+      .play_instantly_text>div {
+            font-size: 1rem;
+            text-align: center;
+      }
+
+      .play_instantly_text {
+            width: 100%;
+            padding: 20px;
+            text-align: end;
+      }
+
+
+
+      .play_instantly_img>img {
+            width: 100%;
+      }
+
+      .grident_text {
+
+            font-size: 1.5rem;
+
+      }
+
       .more_game_container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -411,6 +451,7 @@ nav {
 
       body {
 
-            background-color: olive;
+            background-color: rgb(233, 233, 224);
       }
+
 }
